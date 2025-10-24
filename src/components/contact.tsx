@@ -31,7 +31,7 @@ export default function Contact() {
           email: formData.get("email"),
           subject: formData.get("subject"),
           message: formData.get("message"),
-          from_name: "DevPortfolio Contact Form",
+          from_name: formData.get("name"),
           replyto: formData.get("email"),
         }),
       });
