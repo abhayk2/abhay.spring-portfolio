@@ -33,7 +33,7 @@ const projectsData: Project[] = [
     title: "Portfolio Website",
     description: "A personal portfolio to showcase projects and skills, built with a modern tech stack. Integerated Web3Forms to send emails to the user. ",
     tags: ["TypeScript", "Next JS", "Web3Forms API", "Tailwind CSS", "React", "shadcn/ui + Radix UI"],
-    githubUrl: "#",
+    githubUrl: "https://github.com/abhayk2/abhay.spring-portfolio",
     liveUrl: "#",
     imageUrl: "/portfolio.png",
     imageHint: "developer portfolio",
