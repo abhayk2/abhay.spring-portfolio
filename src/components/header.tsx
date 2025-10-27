@@ -41,7 +41,7 @@ export default function Header() {
                 <div className="grid gap-4 py-6">
                   <a href="#" className="flex items-center space-x-2 mb-4">
                     <Code className="h-6 w-6 text-primary" />
-                    <span className="font-bold font-headline text-lg">DevPortfolio</span>
+                    <span className="font-bold font-headline text-lg">abhay.spr</span>
                   </a>
                   {navLinks.map((link) => (
                     <a key={link.href} href={link.href} className="flex w-full items-center py-2 text-lg font-semibold hover:text-primary">
