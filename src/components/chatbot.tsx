@@ -37,13 +37,24 @@ export default function Chatbot (){
 
         try{
             const response = await fetch ("https://portfolio-chatbot-backend-t9qj.onrender.com/chat",{
+            // const response = await fetch ("http://localhost:8000/chat",{
                 method:"POST",
                 headers:{"Content-Type":"application/json"},
                 body: JSON.stringify({ messages: updatedMessages }),
             });
 
-            const data = await response.json();
-            setMessages([...updatedMessages,{role:"assistant",content:data.response}]);
+            const reader = response.body?.getReader();
+            const decoder = new TextDecoder();
+            let assistantMessage = "";
+            setMessages([...updatedMessages,{role:"assistant",content:""}]);
+            while(true){
+                const {done,value} = await reader!.read();
+                if(done) break;
+
+                const chunk = decoder.decode(value);
+                assistantMessage+=chunk;
+                setMessages([...updatedMessages,{role:"assistant",content:assistantMessage}])
+            }
         }catch(error){
                   setMessages([...updatedMessages, { role: "assistant", content: "Sorry, I'm having trouble connecting. Please try again later." }]);
         }finally{
