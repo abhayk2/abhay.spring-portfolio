@@ -31,21 +31,21 @@ const projectsData: Project[] = [
   },
   {
     title: "Portfolio Website",
-    description: "A personal portfolio to showcase projects and skills, built with a modern tech stack. Integerated Web3Forms to send emails to the user. ",
-    tags: ["TypeScript", "Next JS", "Web3Forms API", "Tailwind CSS", "React", "shadcn/ui + Radix UI"],
+    description: "A personal portfolio website with an AI-powered chatbot that answers questions about my (Abhay's) background, skills, and projects. The frontend is built with Next.js 15 and TypeScript, featuring a clean dark/light theme, responsive design, an interactive project showcase, and a contact form integrated with Web3Forms for email delivery — no backend required for contact.The standout feature is a custom AI chatbot backed by a Python FastAPI server deployed on Render. It uses the Mistral AI API and dynamically reads my (Abhay's) resume PDF at runtime to answer visitor questions about his experience, education, skills, and social links — keeping answers accurate and grounded in real data.",
+    tags: ["TypeScript", "Next JS", "Web3Forms API", "Python", "FastAPI", "Mistral AI", "PyPDF2", "Tailwind CSS", "React", "shadcn/ui + Radix UI"],
     githubUrl: "https://github.com/abhayk2/abhay.spring-portfolio",
     liveUrl: "#",
     imageUrl: "/portfolio.png",
     imageHint: "developer portfolio",
   },
   {
-    title: "Movie Finder",
-    description: "A web app to discover and save recipes from a vast online database, with dietary filters.",
-    tags: ["Vue.js", "API Integration", "Pinia"],
-    githubUrl: "https://github.com/abhayk2/movie-mingle",
-    liveUrl: "https://movie-mingle-ab.netlify.app",
-    imageUrl: "/movie.png",
-    imageHint: "food cooking",
+    title: "Video Zoomer",
+    description: "Video Zoomer lets you zoom into video content without zooming the player controls or buttons. Perfect for split screen mode — when you snap a video to one side of your screen, the video content stays sharp and zoomable while all controls remain untouched.Works on YouTube, Udemy, Hotmart, Vimeo, and most major video streaming platforms.",
+    tags: ["JavaScript", "HTML5", "CSS", "JSON"],
+    githubUrl: "https://github.com/abhayk2/browser-extension",
+    liveUrl: "",
+    imageUrl: "/video_zoomer_banner.png",
+    imageHint: "browser extension",
   },
   {
     title: "Chat Application",
@@ -56,7 +56,16 @@ const projectsData: Project[] = [
     imageUrl: "/chatapp.png",
     imageHint: "messaging app",
   },
-  
+  {
+    title: "Movie Finder",
+    description: "A web app to discover and save recipes from a vast online database, with dietary filters.",
+    tags: ["Vue.js", "API Integration", "Pinia"],
+    githubUrl: "https://github.com/abhayk2/movie-mingle",
+    liveUrl: "https://movie-mingle-ab.netlify.app",
+    imageUrl: "/movie.png",
+    imageHint: "food cooking",
+  },
+
 ];
 
 export default function Projects() {

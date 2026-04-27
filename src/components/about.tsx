@@ -4,8 +4,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function About() {
   const skills = ["Spring Boot",
-    "React","Angular","Node.js", "Java", "JavaScript", "TypeScript", 
-    "HTML5","PostgresSQL", "MySQL" ,"Docker","Git"
+    "React","Angular","Node.js", "Java", "JavaScript", "TypeScript", "Python","REST API","FAST API",
+    "HTML5","PostgresSQL", "MySQL" ,"PLSQL","Docker","Git"
   ];
 
   return (
