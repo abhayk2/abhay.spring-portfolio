@@ -9,10 +9,8 @@ export default function About() {
     <section id="about" className="py-12 sm:py-20 bg-secondary">
       <div className="container px-4 sm:px-8 max-w-5xl mx-auto">
 
-        {/* Top: Image + Text */}
         <div className="flex flex-col md:grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-10">
 
-          {/* Profile Image */}
           <div className="flex justify-center w-full">
             <Image
               src="/profile.jpg"
@@ -24,7 +22,6 @@ export default function About() {
             />
           </div>
 
-          {/* About Text */}
           <div className="space-y-4 text-center md:text-left">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight font-headline">
               About Me
@@ -36,7 +33,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Skills Marquee Card — full width below */}
         <Card className="overflow-hidden p-0 w-full shadow-md">
           <CardHeader className="px-4 sm:px-6 pt-5 pb-3">
             <CardTitle className="text-lg sm:text-xl">My Skills</CardTitle>
@@ -55,7 +51,6 @@ export default function About() {
                   WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%)"
                 }}
               >
-                {/* Row 1 — scrolls left */}
                 <div className="flex gap-4 sm:gap-5 w-max animate-marquee-left mb-3 sm:mb-4">
                   {[...row1, ...row1].map((skill, i) => (
                     <div key={i} className="flex flex-col items-center gap-1.5 min-w-[56px] sm:min-w-[68px]">
@@ -82,7 +77,6 @@ export default function About() {
                   ))}
                 </div>
 
-                {/* Row 2 — scrolls right */}
                 <div className="flex gap-4 sm:gap-5 w-max animate-marquee-right">
                   {[...row2, ...row2].map((skill, i) => (
                     <div key={i} className="flex flex-col items-center gap-1.5 min-w-[56px] sm:min-w-[68px]">
