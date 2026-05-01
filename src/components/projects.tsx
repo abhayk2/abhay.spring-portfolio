@@ -57,13 +57,13 @@ const projectsData: Project[] = [
     imageHint: "messaging app",
   },
   {
-    title: "Movie Finder",
-    description: "A web app to discover and save recipes from a vast online database, with dietary filters.",
-    tags: ["Vue.js", "API Integration", "Pinia"],
-    githubUrl: "https://github.com/abhayk2/movie-mingle",
-    liveUrl: "https://movie-mingle-ab.netlify.app",
-    imageUrl: "/movie.png",
-    imageHint: "food cooking",
+    title: "Local Drop",
+    description: "A browser-based file transfer tool that sends files directly between devices connected on same network using WebRTC — no server storage, no cloud uploads.",
+    tags: ["WebRTC", "Socket.io", "WebSockets","React","NextJs","Javascript"],
+    githubUrl: "https://github.com/abhayk2/localDrop",
+    liveUrl: "https://local-drop.vercel.app/",
+    imageUrl: "/file_transfer.png",
+    imageHint: "File Transfer",
   },
 
 ];
