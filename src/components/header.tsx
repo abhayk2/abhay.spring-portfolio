@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Menu, Code } from "lucide-react";
+import { Menu, Code, FileText } from "lucide-react";
 import { ThemeToggle } from "./theme-toggle";
 
 export default function Header() {
@@ -27,7 +27,10 @@ export default function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
            <ThemeToggle />
           <Button asChild className="hidden sm:inline-flex">
-            <a href="/resume.pdf" download>Download Resume</a>
+            <a href="/resume">
+              <FileText className="mr-2 h-4 w-4" />
+              View Resume
+            </a>
           </Button>
           <div className="md:hidden">
             <Sheet>
@@ -49,7 +52,10 @@ export default function Header() {
                     </a>
                   ))}
                    <Button asChild className="mt-4">
-                      <a href="/resume.txt" download>Download Resume</a>
+                      <a href="/resume">
+                        <FileText className="mr-2 h-4 w-4" />
+                        View Resume
+                      </a>
                    </Button>
                 </div>
               </SheetContent>
