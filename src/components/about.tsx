@@ -38,12 +38,13 @@ export default function About() {
             <CardTitle className="text-lg sm:text-xl">My Skills</CardTitle>
           </CardHeader>
           <CardContent className="px-0 pb-5">
-            <div className="
-          mx-3 sm:mx-4 rounded-xl overflow-hidden py-5
-          bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50
-          dark:from-[#0f0c29] dark:via-[#1e1b4b] dark:to-[#1a0533]
-          border border-indigo-100 dark:border-purple-900/30
-        ">
+            <div
+              className="mx-3 sm:mx-4 rounded-xl overflow-hidden py-5 border"
+              style={{
+                background: `linear-gradient(to bottom right, hsl(var(--skills-gradient-from)), hsl(var(--skills-gradient-via)), hsl(var(--skills-gradient-to)))`,
+                borderColor: 'hsl(var(--border))',
+              }}
+            >
               <div
                 className="relative overflow-hidden"
                 style={{
@@ -54,14 +55,14 @@ export default function About() {
                 <div className="flex gap-4 sm:gap-5 w-max animate-marquee-left mb-3 sm:mb-4">
                   {[...row1, ...row1].map((skill, i) => (
                     <div key={i} className="flex flex-col items-center gap-1.5 min-w-[56px] sm:min-w-[68px]">
-                      <div className="
-                    w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl
-                    flex items-center justify-center
-                    bg-white/80 dark:bg-white/5
-                    border border-indigo-100 dark:border-white/10
-                    shadow-sm dark:shadow-none
-                    hover:-translate-y-1 transition-transform duration-200
-                  ">
+                      <div
+                        className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center border hover:-translate-y-1 transition-transform duration-200"
+                        style={{
+                          backgroundColor: `hsl(var(--skills-icon-bg))`,
+                          borderColor: `hsl(var(--skills-icon-border))`,
+                          boxShadow: `var(--skills-shadow)`,
+                        }}
+                      >
                         <svg
                           viewBox="0 0 32 32"
                           width="24"
@@ -80,14 +81,14 @@ export default function About() {
                 <div className="flex gap-4 sm:gap-5 w-max animate-marquee-right">
                   {[...row2, ...row2].map((skill, i) => (
                     <div key={i} className="flex flex-col items-center gap-1.5 min-w-[56px] sm:min-w-[68px]">
-                      <div className="
-                    w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl
-                    flex items-center justify-center
-                    bg-white/80 dark:bg-white/5
-                    border border-indigo-100 dark:border-white/10
-                    shadow-sm dark:shadow-none
-                    hover:-translate-y-1 transition-transform duration-200
-                  ">
+                      <div
+                        className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl flex items-center justify-center border hover:-translate-y-1 transition-transform duration-200"
+                        style={{
+                          backgroundColor: `hsl(var(--skills-icon-bg))`,
+                          borderColor: `hsl(var(--skills-icon-border))`,
+                          boxShadow: `var(--skills-shadow)`,
+                        }}
+                      >
                         <svg
                           viewBox="0 0 32 32"
                           width="24"
